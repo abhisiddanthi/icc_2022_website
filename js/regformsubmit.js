@@ -102,7 +102,46 @@ function checkForm()
                           document.getElementById("submit").innerText = "Fill all compulsory fields and try again";
 
                       }
+                      
+                      else if(document.getElementById("firstname3").value.length == 0)
+                      {
+                          document.getElementById("firstname3").focus();
+                          var mysubmit = document.getElementById('submit');
+                          var displaySetting = submit.style.display;
+                          mysubmit.style.display = 'block';
+                          document.getElementById("submit").innerText = "Fill all compulsory fields and try again";
 
+                      }
+
+                      else if(document.getElementById("email3").value.length == 0)
+                      {
+                          document.getElementById("email3").focus();
+                          var mysubmit = document.getElementById('submit');
+                          var displaySetting = submit.style.display;
+                          mysubmit.style.display = 'block';
+                          document.getElementById("submit").innerText = "Fill all compulsory fields and try again";
+
+                      }
+
+                      else if(document.getElementById("phone3").value.length == 0)
+                      {
+                          document.getElementById("phone3").focus();
+                          var mysubmit = document.getElementById('submit');
+                          var displaySetting = submit.style.display;
+                          mysubmit.style.display = 'block';
+                          document.getElementById("submit").innerText = "Fill all compulsory fields and try again";
+
+                      }
+
+                      else if(document.getElementById("college3").value.length == 0)
+                      {
+                          document.getElementById("college3").focus();
+                          var mysubmit = document.getElementById('submit');
+                          var displaySetting = submit.style.display;
+                          mysubmit.style.display = 'block';
+                          document.getElementById("submit").innerText = "Fill all compulsory fields and try again";
+
+                      }
 
 
                       else if(document.getElementById("ques1").value.length == 0)
@@ -122,7 +161,7 @@ function checkForm()
                         var mysubmit = document.getElementById('submit');
                         var displaySetting = submit.style.display;
                         mysubmit.style.display = 'block';
-                        document.getElementById("submit").innerHTML = "<center><h1><b>You have successfully registered for ICC 2024.</b></h1  ></center> <br>Business Club conducts ICC every year in association with Kshitij. Kshitij is the annual techno-management fest of IIT Kharagpur which will be conducted on 19th, 20th and 21st of January. Kshitij organizes a wide range of events encompassing every genre of technology and management. Numerous events of the fest are cerified by World-renowned organizations like ACM, IEEE, ASME, ASHRAE and IMechE. <br> <center><h1><b>Visit Kshitij link at: <a href='https://ktj.in/' target='_blank'>Kshitij 2024</a></b></h1></center>";
+                        document.getElementById("submit").innerHTML = "<center><h1><b>You have successfully registered for ICC 2024.</b></h1  ></center> <br>Business Club conducts ICC every year in association with Kshitij. Kshitij is the annual techno-management fest of IIT Kharagpur. Kshitij organizes a wide range of events encompassing every genre of technology and management. Numerous events of the fest are cerified by World-renowned organizations like ACM, IEEE, ASME, ASHRAE and IMechE. This year Kshitij will be conducted on 19th, 20th and 21st January 2024.<br> <center><h1><b>Learn more about Kshitij 2024 at: <a href='https://ktj.in/' target='_blank'>Kshitij 2024</a></b></h1></center>";
                         
                       }
 

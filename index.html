@@ -242,10 +242,15 @@
         var field35 = $("#phone5").val();
         var field45 = $("#college5").val();
         var field55 = $("#KTJ5").val();
+        var field16 = $("#firstname6").val();
+        var field26 = $("#email6").val();
+        var field36 = $("#phone5").val();
+        var field46 = $("#college6").val();
+        var field56 = $("#KTJ6").val();
         var field5 = $("#ques1").val();
   
         $.ajax({
-          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScTaB0nRv2BXq2n8ONiADTwIocg0gNcWxf5FKD8mDgaXvIAnQ/formResponse",
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyI8XtjcNR3xsl4eIyfW7W1BHtK9izIR7dByIuIgcfneDK7g/formResponse",
             
           //add your google form generated numbers below which are also the 'names' of your inputs     
           data: {
@@ -1145,7 +1150,7 @@ function hiden()
                 <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 <h3 class="modal-title"><strong>Alert!!</strong></h3>
             </div>
-            <div id="submit" class="modal-body" style="height: 500px !important; text-align: justify;">               
+            <div id="submit" class="modal-body" style="height: 530px !important; text-align: justify;">               
             </div>
             <div class="modal-footer" style="border-radius: 0px !important;">
               <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
@@ -1657,6 +1662,51 @@ function hiden()
                         <input type="text" class="form-control1  inputfields" id="KTJ2" name="entry.1202393852" placeholder="Enter your KTJ ID">
                     </div>
                     </div>
+                    <br><br><br>
+
+                    <span id="formheading"><sup>*</sup> Member-3</span>
+                 
+                    <br><br>
+                    
+                        <div class="row">
+    
+                          <div class="col-md-6">
+                              <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
+                              <input type="text" class="form-control1  inputfields" id="firstname3" name="entry.1434395228" placeholder="Enter Your Name" required>
+                          </div>
+                        
+            
+                          <div class="col-md-6">
+                              <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
+                              <input type="text" class="form-control1  inputfields" id="email3" name="entry.1181001717" placeholder="abc@xyz.com" required>
+                          </div>
+            
+                          </div>
+            
+                          <div class="row">
+            
+                            <br>
+            
+                          <div class="col-md-6">
+                              <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
+                              <input type="text" class="form-control1  inputfields" id="phone3" name="entry.490861352" placeholder="+91" required>
+                          </div>
+            
+                          <div class="col-md-6">
+                              <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
+                              <input type="text" class="form-control1  inputfields" id="college3" name="entry.966671481" placeholder="College Name" required>
+                          </div>
+                          
+                        </div>
+                        <div class="row">
+    
+                          <br>
+          
+                        <div class="col-md-6">
+                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                            <input type="text" class="form-control1  inputfields" id="KTJ3" name="entry.1701716227" placeholder="Enter your KTJ ID">
+                        </div>
+                        </div>
                   
               
 
@@ -1666,57 +1716,6 @@ function hiden()
 
 
               <div class="accordion accordion-flush" id="accordionFlushExample">
-                
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      <span id="formheading">Member-3</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <div class="row">
-
-                        <div class="col-md-6">
-                            <label for="firstname" class="form-label"  id="reglabel">Name</label>
-                            <input type="text" class="form-control1" id="firstname3" name="entry.1434395228" placeholder="Enter Your Name">
-                        </div>
-                      
-          
-                        <div class="col-md-6">
-                            <label for="email" class="form-label"  id="reglabel">Email id:</label>
-                            <input type="text" class="form-control1" id="email3" name="entry.1181001717" placeholder="abc@xyz.com">
-                        </div>
-          
-                        </div>
-          
-                        <div class="row">
-          
-                          <br>
-          
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
-                            <input type="text" class="form-control1" id="phone3" name="entry.490861352" placeholder="+91">
-                        </div>
-          
-                        <div class="col-md-6">
-                            <label for="college" class="form-label"  id="reglabel">College</label>
-                            <input type="text" class="form-control1" id="college3" name="entry.966671481" placeholder="College Name">
-                        </div>
-                        
-                        </div>
-                        <div class="row">
-
-                          <br>
-          
-                        <div class="col-md-6" >
-                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                            <input type="text" class="form-control1  inputfields" id="KTJ3" name="entry.1701716227" placeholder="Enter your KTJ ID">
-                        </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -1812,6 +1811,57 @@ function hiden()
                         <div class="col-md-6">
                             <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
                             <input type="text" class="form-control1  inputfields" id="KTJ5" name="entry.2011110740" placeholder="Enter your KTJ ID">
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span id="formheading">Member-6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                            <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                            <input type="text" class="form-control1" id="firstname6" name="entry.1567032557" placeholder="Enter Your Name">
+                        </div>
+                      
+          
+                        <div class="col-md-6">
+                            <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                            <input type="text" class="form-control1" id="email6" name="entry.1082342397" placeholder="abc@xyz.com">
+                        </div>
+          
+                        </div>
+          
+                        <div class="row">
+          
+                          <br>
+          
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                            <input type="text" class="form-control1" id="phone6" name="entry.1051092772" placeholder="+91">
+                        </div>
+          
+                        <div class="col-md-6">
+                            <label for="college" class="form-label"  id="reglabel">College</label>
+                            <input type="text" class="form-control1" id="college6" name="entry.469341535" placeholder="College Name">
+                        </div>
+                        
+                        </div>
+                        <div class="row">
+
+                          <br>
+          
+                        <div class="col-md-6">
+                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                            <input type="text" class="form-control1  inputfields" id="KTJ6" name="entry.1256045612" placeholder="Enter your KTJ ID">
                         </div>
                         </div>
                     </div>

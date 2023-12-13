@@ -161,7 +161,7 @@ function checkForm()
                         var mysubmit = document.getElementById('submit');
                         var displaySetting = submit.style.display;
                         mysubmit.style.display = 'block';
-                        document.getElementById("submit").innerHTML = "<center><h1><b>You have successfully registered for ICC 2024.</b></h1  ></center> <br>Business Club conducts ICC every year in association with Kshitij. Kshitij is the annual techno-management fest of IIT Kharagpur. Kshitij organizes a wide range of events encompassing every genre of technology and management. Numerous events of the fest are cerified by World-renowned organizations like ACM, IEEE, ASME, ASHRAE and IMechE. This year Kshitij will be conducted on 19th, 20th and 21st January 2024.<br> <center><h1><b>Learn more about Kshitij 2024 at: <a href='https://ktj.in/' target='_blank'>Kshitij 2024</a></b></h1></center>";
+                        document.getElementById("submit").innerHTML = "<center><h1><b>You have successfully registered for ICC 2024.</b></h1  ></center> <br>Business Club conducts ICC every year in association with Kshitij. Kshitij is the annual techno-management fest of IIT Kharagpur. Kshitij organizes a wide range of events encompassing every genre of technology and management. Numerous events of the fest are cerified by World-renowned organizations like ACM, IEEE, ASME, ASHRAE and IMechE. This year Kshitij will be conducted on 19th, 20th and 21st January 2024.<br> <center><h1><b>For information regarding further round, you can register at: <a href='https://ktj.in/' target='_blank'>Kshitij 2024</a></b></h1></center>";
                         
                       }
 

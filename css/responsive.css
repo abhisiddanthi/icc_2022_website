@@ -1226,6 +1226,14 @@
 	{
 		height:410px !important;
 	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
+	}
 	.gallerymodal
 	{
 		height:410px !important;
@@ -1257,6 +1265,14 @@
 	{
 		height:410px !important;
 	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
+	}
 	.Timeline-body
 	{
 		height: 2670px !important;
@@ -1283,6 +1299,14 @@
 	.modal-body
 	{
 		height:410px !important;
+	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
 	}
 	.Timeline-body
 	{
@@ -1316,6 +1340,14 @@
 	{
 		height:410px !important;
 	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
+	}
 	.Timeline-body
 	{
 		height: 3200px !important;
@@ -1342,6 +1374,14 @@
 	.modal-body
 	{
 		height:500px !important;
+	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
 	}
 	.gallerymodal
 	{
@@ -1381,6 +1421,14 @@
 	{
 		height:500px !important;
 	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
+	}
 	.gallerymodal
 	{
 		height:410px !important;
@@ -1412,6 +1460,14 @@
 	{
 		height:500px !important;
 	}
+	.submit-body
+	{
+		height:560px !important;
+	}
+	.submit-dialog
+	{
+		height:660px !important;	
+	}
 	.gallerymodal
 	{
 		height:410px !important;
@@ -1442,6 +1498,14 @@
 	.modal-body
 	{
 		height:500px !important;
+	}
+	.submit-body
+	{
+		height:620px !important;
+	}
+	.submit-dialog
+	{
+		height:720px !important;	
 	}
 	.gallerymodal
 	{
@@ -1490,6 +1554,14 @@
 	{
 		height:330px !important;
 	}
+	.submit-body
+	{
+		height:740px !important;
+	}
+	.submit-dialog
+	{
+		height:840px !important;	
+	}
 	.item{
 		height:330px !important;
 	}
@@ -1520,6 +1592,14 @@
 	.modal-body
 	{
 		height:650px !important;
+	}
+	.submit-body
+	{
+		height:790px !important;
+	}
+	.submit-dialog
+	{
+		height:920px !important;	
 	}
 	h2[role="headregister"]
 	{
@@ -1567,6 +1647,14 @@
 	.modal-body
 	{
 		height:550px !important;
+	}
+	.submit-body
+	{
+		height:840px !important;
+	}
+	.submit-dialog
+	{
+		height:950px !important;	
 	}
 	h2[role="headregister"]
 	{

@@ -918,6 +918,10 @@ footer[role="footer"] p a {
 	height: 475px !important;
 }
 
+.submit-body{
+	height:560px !important;
+}
+
 .modal-footer {
 	background-color: #2e3033;
 	border-radius: 0 0 2vw 2vw !important;

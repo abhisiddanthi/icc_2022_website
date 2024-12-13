@@ -1276,14 +1276,28 @@ footer[role="footer"] p a {
 	/* Center the image */
 	background-repeat: no-repeat;
 	/* Do not repeat the image */
-	background-size: cover;
+	background-size: cover !important;
 	/* Resize the background image to cover the entire container */
 	color: black;
 	padding-left: 10px;
 	height:100% !important;
 	background-attachment: fixed;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+    overflow: auto;
 	
 }
+@media (max-width: 768px) {
+    .Timeline-body {
+        background-attachment: scroll;
+		height: 100%;
+		background-size: contain;
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+
 .Timeline-footer {
 	background-color: #2e3033;
 	border-radius: 0 0 0 0 !important;

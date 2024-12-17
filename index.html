@@ -242,40 +242,50 @@
         var field35 = $("#phone5").val();
         var field45 = $("#college5").val();
         var field55 = $("#KTJ5").val();
+        var field16 = $("#firstname6").val();
+        var field26 = $("#email6").val();
+        var field36 = $("#phone5").val();
+        var field46 = $("#college6").val();
+        var field56 = $("#KTJ6").val();
         var field5 = $("#ques1").val();
   
         $.ajax({
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSeHFzNbIapfpMI2E3DDc0cQdvlvy7b3cr21ck8tSXgMT-HURA/formResponse",
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdbzbbFBjz9-HN3hgkMWvjplz3ntH6TUpMkxdFYNMAg9uzEoA/formResponse",
             
           //add your google form generated numbers below which are also the 'names' of your inputs     
           data: {
-              "entry.1782577217": field1,
-            "entry.2130025010": field11,
-            "entry.1790963972": field21,
-            "entry.237538463": field31,
-            "entry.1424570216": field41,
-            "entry.146273771": field51,
-            "entry.968329203": field12,
-            "entry.2008869754": field22,
-            "entry.237735070": field32,
-            "entry.417545222": field42,
-            "entry.403395898": field52,
-            "entry.644400398": field13,
-            "entry.1460196068": field23,
-            "entry.781112184": field33,
-            "entry.1704582960": field43,
-            "entry.571196062": field53,
-            "entry.1660144525": field14,
-            "entry.225061196": field24,
-            "entry.735057038": field34,
-            "entry.1979480920": field44,
-            "entry.971276001": field45,
-            "entry.950402432": field15,
-            "entry.1016277411": field25,
-            "entry.1283623901": field35,
-            "entry.483976725": field45,
-            "entry.1931006355": field55,
-            "entry.194555279": field5,
+              "entry.1029709764": field1,
+          "entry.1037030107": field11,
+          "entry.337211205": field21,
+          "entry.321072224": field31,
+          "entry.851906029": field41,
+          "entry.875310571": field51,
+          "entry.1558753111": field12,
+          "entry.516496848": field22,
+          "entry.1465245442": field32,
+          "entry.1076901440": field42,
+          "entry.1202393852": field52,
+          "entry.1434395228": field13,
+          "entry.1181001717": field23,
+          "entry.490861352": field33,
+          "entry.966671481": field43,
+          "entry.1701716227": field53,
+          "entry.236060277": field14,
+          "entry.2035381134": field24,
+          "entry.825306097": field34,
+          "entry.674242700": field44,
+          "entry.577978907": field45,
+          "entry.187475855": field15,
+          "entry.553517051": field25,
+          "entry.1720313235": field35,
+          "entry.1092825507": field45,
+          "entry.2011110740": field55,
+          "entry.1567032557": field16,
+          "entry.1082342397": field26,
+          "entry.1051092772": field36,
+          "entry.469341535": field46,
+          "entry.1256045612": field56,
+          "entry.175447457": field5,
           },
           type: "POST",
           dataType: "xml",
@@ -294,7 +304,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #21242d url(images/loader.gif) no-repeat center;
+	background: #21242d url(images/loader4.gif) no-repeat center;
 	z-index: 999;
   background-size: cover;
 }
@@ -309,7 +319,7 @@ function loadNow(opacity) {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
             loadNow(opacity - 0.098);
-        }, 50);
+        }, 20);
     }
 }
 
@@ -322,6 +332,12 @@ document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loader');
     loadNow(3);
 });
+
+function hiden()
+{
+    regbtn.style.visibility="hidden";
+    regbtn.style.display="none";   
+}
     </script>
 </head>
 
@@ -373,7 +389,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div class="modal fade" id="myModal5" role="dialog">
     <div id="fadecontainer">  
-        <div class="modal-fullscreen">
+        <div class="modal-fullscreen timeline-fullscreen">
         
             <!-- Modal content -->
           <div class="modal-content rounded=10">
@@ -389,7 +405,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <div class="container timelinecontain">
     <div class="page-header">
         <h1 id="timeline">History of ICC</h1>
-    </div> -->
+    </div> 
     
     <ul class="timeline">
         <li>
@@ -523,7 +539,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
         </li> -->
-    <!-- </ul> -->
+    </ul>
 </div>
               
             </div>
@@ -591,7 +607,6 @@ document.addEventListener("DOMContentLoaded", function() {
                   <li data-target="#carousel-example-generic" data-slide-to="28"></li> -->
                 </ol>
               
-                <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
                     <img src="images/gallery/IMG_5049.JPG" alt="">
@@ -793,6 +808,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
   
 
   <!--Modal-Gallery content ends-->
@@ -819,7 +835,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <h4 class="modaltext">
                  
                   
-                  <!-- The event will be conducted in two stages	
+                  The event will be conducted in two stages	
 
                   <br><br><br>
                   <strong>Stage 1: Prelims</strong>
@@ -830,7 +846,7 @@ document.addEventListener("DOMContentLoaded", function() {
                       <li>The dates for registrations will be declared soon. All participants must strictly abide by them.</li>
                       <li>The result of the prelims will be communicated through email, and the final list of qualified teams will be announced through Business Club, IIT Kharagpur's social media pages, after which we shall move to Stage 2.
                       </li>
-                      
+                      <!-- <li>The list of qualifying teams will be released through all of Business Club, IIT Kharagpur’s social media pages after which we shall move to Stage 2.</li>    -->
                     </ul>
                   </div>
 
@@ -840,12 +856,12 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div id="rules">
                     <ul>
                       <li>All the shortlisted teams shall receive the final case.</li>
-                      <li>The finalists would present their solution for the final case during Kshitij (Tentatively the third week of January), 2024.</li>
+                      <li>The finalists would present their solution for the final case during Kshitij (Tentatively the third week of January), 2025.</li>
                       <li>Under no circumstances will a modification of team members be permitted, once the preliminary solution is submitted.</li>
                       
                     </ul>
-                  </div> -->
-                  Coming Soon!
+                  </div>
+
                 
                 </h4> 
               </p>                  
@@ -1148,13 +1164,12 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="modal-dialog">
         
             <!-- Modal content-->
-          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+          <div class="modal-content rounded=10 submit-dialog" style="width: 90%; margin: auto;">
             <div class="modal-header" style="border-radius: 0px !important;">
                 <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                 <h3 class="modal-title"><strong>Alert!!</strong></h3>
             </div>
-            <div id="submit" class="modal-body" style="height: 200px !important; text-align: center;">
-               please check your mail                 
+            <div id="submit" class="modal-body submit-body" style="text-align: justify;">               
             </div>
             <div class="modal-footer" style="border-radius: 0px !important;">
               <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
@@ -1184,17 +1199,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 <br>       
                 
                 <div id="rules">
-                <!-- <ul>
+                <ul>
                   <li>Prior registration is mandatory for participation.</li><br><br>
-                  <li>Each team must have at least 3 and at most 5 members.</li><br><br>
+                  <li>Each team must have at least 3 and at most 6 members.</li><br><br>
                   <li>Students from different colleges can be in the same team.</li><br><br>
                   <li>Both undergraduate and postgraduate students are allowed to participate.</li><br><br>
                   <li>Teams must mention the names of the members, their respective colleges and contact details on the first page of the report.</li><br><br>
                   <li>Plagiarism will not be tolerated.</li><br><br>
                   <li>All decisions made by the judges and Business Club, IIT Kharagpur will be final and binding.</li><br><br>
                   
-                </ul> -->
-                Coming Soon!
+                </ul>
+
                 
                   <!-- Online registration is mandatory for participation. <br><br><br>
                   Each team must have at least 1 and at most 5 members <br><br><br>
@@ -1322,21 +1337,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- slider -->
 
 <main role="slider-container"> 
-
-  <style>
-    	@media only screen and (max-width: 600px) {
-      .that {
-      display: none;
-      }         
-    }
-    @media only screen and (min-width: 600px) {
-      .why {
-      display: none;
-      }
-    }
-  </style>
   
   <!-- side bar -->
+  
   <aside role="siderbar-nav" class="side-bar">
     <nav>
       <ul class="nav nav-tabs">
@@ -1376,9 +1379,9 @@ document.addEventListener("DOMContentLoaded", function() {
       
       <h1 id="bclub" class="headalign"> <a id="blogo" href="index.html"  title="Floxi"><img id="whitelogo" src="images/whitelogo.png" alt="BClub"/></a>&nbsp;<span id="headertext"><span id="businesstext"><span id="Binlogo">B</span>usiness </span><span id="clubtext">Club</span></span>
         <!-- REGISTER BUTTON -->
-      <!-- <span id="reghover" class="registerbutton" style="padding-top: ;">
+      <span id="reghover" class="registerbutton">
         <a id="areg" data-toggle="tab" href="#menu2" title="Register Now" onclick="hiden(); change()"><strong>Register</strong></a>
-      </span> -->
+      </span>
       <!-- REGISTER BUTTON -->
       </h1>
       <!-- logo --> 
@@ -1395,7 +1398,7 @@ document.addEventListener("DOMContentLoaded", function() {
   <!-- main -->
   
   <main role="main" id="main" style="padding-top: 10vh !important;">
-    <div class="container" style="margin: auto;width: 90%;"> 
+    <div class="container" style="margin: auto; width: 90%;"> 
       
       <!-- tab-content -->
       
@@ -1403,11 +1406,11 @@ document.addEventListener("DOMContentLoaded", function() {
         
         <!-- Home -->
         
-        <section id="home" class="tab-pane fade in active">
+        <section id="home" class="tab-pane fade in active" style="padding-bottom: 200px;">
           <article class="home-content">
             <header role="home-title" id="typecontainer">
               <h2 id="typehead">
-                <div id="typed-strings"><span>Indian Case Challenge, 2025</span><span>Business Club, IIT Kharagpur</span><span>Coming Soon!</span> </div>
+                <div id="typed-strings"><span>Indian Case Challenge, 2025</span><span>Business Club, IIT Kharagpur</span><span>Now live!</span> </div>
                 <span id="typed" style="white-space:pre;"></span></h2>
             </header>
             <p>The Indian Case Challenge is one of the largest case study competitions in India with a worldwide participation.
@@ -1430,16 +1433,15 @@ document.addEventListener("DOMContentLoaded", function() {
         
         <section id="menu1" class="tab-pane fade other-page about-pan" >
           <header role="page-title">
-            <h2 id="bclub" role="headabout" style="font-size: 6rem !important;">About ICC</h2>
+            <h2>
+              <h2 id="bclub" role="headabout" style="font-size: 6rem !important;">About ICC</h2>
+            </h2>
           </header>
-          <article id="aboutarticle">
-            <p style="font-size: 2.2rem !important; ">The Indian Case Challenge, hosted annually by Business Club, IIT Kharagpur, is India's Largest Business Case Competition. The 13th Edition of the ICC is brought to you in association with Kshitij, IIT Kharagpur</p>
-            <p style="font-size: 2.2rem !important;">ICC 2025 will give you the opportunity to compete against the greatest business minds from across the world, along with huge cash prizes. The previous edition of ICC attracted over 5000 participants, including 43 international teams.</p>
-          </article>
-
-
-
-
+              <article id="aboutarticle">
+                <p style="font-size: 2.2rem !important; ">The Indian Case Challenge, hosted annually by Business Club, IIT Kharagpur, is India's Largest Business Case Competition. The 13th Edition of the ICC is brought to you in association with Kshitij, IIT Kharagpur</p>
+                <p style="font-size: 2.2rem !important;">ICC 2025 will give you the opportunity to compete against the greatest business minds from across the world, along with huge cash prizes. The previous edition of ICC attracted over 5000 participants, including 43 international teams.</p>
+              </article>
+              
           <!--MODALS-->
 
 
@@ -1463,27 +1465,19 @@ document.addEventListener("DOMContentLoaded", function() {
               
               
               
-              <!-- Modal - 2 -->
-              
-              <div role="rules" data-toggle="modal" data-target="#myModal2" id="wrapper"   class="col-md-5 col-xs-6">
-                <a href="#">Rules</a>
-              </div>
-              </div>
-                <!-- Modal -->
+                <!-- Modal - 2 -->
                 
-                <div id="modalrow" class="row">
-                <div role="timeline" data-toggle="modal" data-target="#myModal5" id="wrapper"   class="col-md-5 col-xs-6">
-                  <a href="#">Timeline</a>
+                <div role="rules" data-toggle="modal" data-target="#myModal2" id="wrapper"   class="col-md-5 col-xs-6">
+                  <a href="#">Rules</a>
+                </div>
+            </div>
+            <!-- Modal -->
+                
+            <div id="modalrow" class="row">
+              <div role="timeline" data-toggle="modal" data-target="#myModal5" id="wrapper"   class="col-md-5 col-xs-6">
+                <a href="#">Timeline</a>
               </div>
 
-              
-
-
-            
-              
-              
-              
-              
               <!-- Modal - 3 -->
               <!-- <div class="row">
               <div data-toggle="modal" data-target="#myModal3" id="wrapper"   class="col-md-3 col-xs-6">
@@ -1491,12 +1485,6 @@ document.addEventListener("DOMContentLoaded", function() {
               </div> -->
               
               <!-- Modal -->
-              
-              
-              
-              
-              
-              
               
               <!-- Modal - 4 -->
               
@@ -1506,28 +1494,16 @@ document.addEventListener("DOMContentLoaded", function() {
               
               <!-- Modal -->
               
-
-
-
-
-
-              
                 <!-- <div role="gallery" data-toggle="modal" data-target="#myModalgallery" id="wrapper"   class="col-md-5 col-xs-6">
                   <a href="#">Gallery</a>
                 </div> -->
                 
                 <!-- Modal -->
-                
-
-
-
-
-
               
               <!--Modals over-->
               
-              </div>
             </div>
+
             <!-- <div class="indicator" id="arrowdown">
               <a href="#amodal4" onclick="arrowclick()"><span></span>
               <span></span>
@@ -1547,16 +1523,6 @@ document.addEventListener("DOMContentLoaded", function() {
         <!-- about --> 
         
         <!-- Newsletter Subscribtion -->
-        <section id="menu2" class="tab-pane fade other-page">
-            <article class="home-content">
-              <header role="home-title" id="typecontainer">
-                <h2 id="typehead">
-                  <div id="typed-strings-2" style="color:rgb(30, 184, 216);"><span>Coming Soon!</span> </div>
-                  <span id="typed2" style="white-space:pre;"></span></h2>
-              </header>
-            </article>
-        </section>
-        <comment>
           <section id="menu2" class="tab-pane fade other-page">
           <header id="regpagehead" role="page-title">
              <h2 id="bclub" role="headregister" >Registrations are open</h2>
@@ -1612,15 +1578,15 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="row">
 
               
-              <div class="col-md-12">
-                <label for="teamname" class="form-label" id="reglabelhead"><sup>*</sup>Team Name</label>
-                <input type="text" class="form-control1 inputfields" id="teamname"  name="entry.1782577217" placeholder="Enter Your Team Name" required>
+                <div class="col-md-12">
+                  <label for="teamname" class="form-label" id="reglabelhead"><sup>*</sup>Team Name</label>
+                  <input type="text" class="form-control1 inputfields" id="teamname"  name="entry.1029709764" placeholder="Enter Your Team Name" required>
+                </div>
+  
+              
+                <!-- <input type="text" class="quantumWizTextinputSimpleinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Short-answer text" disabled="" dir="auto" data-initial-dir="auto" data-initial-value=""> -->
+  
               </div>
-
-            
-              <!-- <input type="text" class="quantumWizTextinputSimpleinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Short-answer text" disabled="" dir="auto" data-initial-dir="auto" data-initial-value=""> -->
-
-            </div>
             
             
              <br><br><br>
@@ -1629,15 +1595,15 @@ document.addEventListener("DOMContentLoaded", function() {
              <br><br>
               <div class="row">
 
-              <div class="col-md-6">
+                <div class="col-md-6">
                   <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
-                  <input type="text" class="form-control1  inputfields" id="firstname1" name="entry.2130025010" placeholder="Enter Your Name" required>
+                  <input type="text" class="form-control1  inputfields" id="firstname1" name="entry.1037030107" placeholder="Enter Your Name" required>
               </div>
             
 
               <div class="col-md-6">
                   <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
-                  <input type="text" class="form-control1  inputfields" id="email1" name="entry.1790963972 " placeholder="abc@xyz.com" required>
+                  <input type="text" class="form-control1  inputfields" id="email1" name="entry.337211205 " placeholder="abc@xyz.com" required>
               </div>
 
               </div>
@@ -1648,12 +1614,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
               <div class="col-md-6">
                   <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
-                  <input type="text" class="form-control1  inputfields" id="phone1" name="entry.237538463 " placeholder="+91" required>
+                  <input type="number" class="form-control1  inputfields" id="phone1" name="entry.321072224 " placeholder="+91" required>
               </div>
 
               <div class="col-md-6">
                   <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
-                  <input type="text" class="form-control1  inputfields" id="college1" name="entry.1424570216" placeholder="College Name" required>
+                  <input type="text" class="form-control1  inputfields" id="college1" name="entry.851906029" placeholder="College Name" required>
               </div>
               <div class="row">
 
@@ -1661,7 +1627,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
               <div class="col-md-6" style="margin: 15px;">
                   <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                  <input type="text" class="form-control1  inputfields" id="KTJ1" name="entry.146273771 " placeholder="Enter your KTJ ID">
+                  <input type="text" class="form-control1  inputfields" id="KTJ1" name="entry.875310571 " placeholder="Enter your KTJ ID">
               </div>
               </div>
               
@@ -1680,71 +1646,59 @@ document.addEventListener("DOMContentLoaded", function() {
                     <div class="row">
 
                       <div class="col-md-6">
-                          <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
-                          <input type="text" class="form-control1  inputfields" id="firstname2" name="entry.968329203" placeholder="Enter Your Name" required>
-                      </div>
-                    
-        
-                      <div class="col-md-6">
-                          <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
-                          <input type="text" class="form-control1  inputfields" id="email2" name="entry.2008869754" placeholder="abc@xyz.com" required>
-                      </div>
-        
-                      </div>
-        
-                      <div class="row">
-        
-                        <br>
-        
-                      <div class="col-md-6">
-                          <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
-                          <input type="text" class="form-control1  inputfields" id="phone2" name="entry.237735070" placeholder="+91" required>
-                      </div>
-        
-                      <div class="col-md-6">
-                          <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
-                          <input type="text" class="form-control1  inputfields" id="college2" name="entry.417545222" placeholder="College Name" required>
-                      </div>
-                      
+                        <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
+                        <input type="text" class="form-control1  inputfields" id="firstname2" name="entry.1558753111" placeholder="Enter Your Name" required>
                     </div>
+                  
+      
+                    <div class="col-md-6">
+                        <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
+                        <input type="text" class="form-control1  inputfields" id="email2" name="entry.516496848" placeholder="abc@xyz.com" required>
+                    </div>
+      
+                    </div>
+      
                     <div class="row">
-
+      
                       <br>
       
                     <div class="col-md-6">
-                        <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                        <input type="text" class="form-control1  inputfields" id="KTJ2" name="entry.403395898 " placeholder="Enter your KTJ ID">
+                        <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
+                        <input type="number" class="form-control1  inputfields" id="phone2" name="entry.1465245442" placeholder="+91" required>
                     </div>
+      
+                    <div class="col-md-6">
+                        <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
+                        <input type="text" class="form-control1  inputfields" id="college2" name="entry.1076901440" placeholder="College Name" required>
                     </div>
-                  
-              
+                    
+                  </div>
+                  <div class="row">
 
+                    <br>
+    
+                  <div class="col-md-6">
+                      <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                      <input type="text" class="form-control1  inputfields" id="KTJ2" name="entry.1202393852 " placeholder="Enter your KTJ ID">
+                  </div>
+                  </div>
+                    <br><br><br>
 
-
-              <br><br>
-
-
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      <span id="formheading">Member-3</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <div class="row">
-
-                        <div class="col-md-6">
+                    <span id="formheading"><sup>*</sup> Member-3</span>
+                 
+                    <br><br>
+                    
+                        <div class="row">
+    
+                          <div class="col-md-6">
                             <label for="firstname" class="form-label"  id="reglabel">Name</label>
-                            <input type="text" class="form-control1" id="firstname3" name="entry.644400398" placeholder="Enter Your Name">
+                            <input type="text" class="form-control1" id="firstname3" name="entry.1434395228" placeholder="Enter Your Name">
                         </div>
                       
           
                         <div class="col-md-6">
                             <label for="email" class="form-label"  id="reglabel">Email id:</label>
-                            <input type="text" class="form-control1" id="email3" name="entry.1460196068" placeholder="abc@xyz.com">
+                            <input type="text" class="form-control1" id="email3" name="entry.1181001717" placeholder="abc@xyz.com">
                         </div>
           
                         </div>
@@ -1755,12 +1709,12 @@ document.addEventListener("DOMContentLoaded", function() {
           
                         <div class="col-md-6">
                             <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
-                            <input type="text" class="form-control1" id="phone3" name="entry.781112184" placeholder="+91">
+                            <input type="number" class="form-control1" id="phone3" name="entry.490861352" placeholder="+91">
                         </div>
           
                         <div class="col-md-6">
                             <label for="college" class="form-label"  id="reglabel">College</label>
-                            <input type="text" class="form-control1" id="college3" name="entry.1704582960" placeholder="College Name">
+                            <input type="text" class="form-control1" id="college3" name="entry.966671481" placeholder="College Name">
                         </div>
                         
                         </div>
@@ -1770,12 +1724,18 @@ document.addEventListener("DOMContentLoaded", function() {
           
                         <div class="col-md-6" >
                             <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                            <input type="text" class="form-control1  inputfields" id="KTJ3" name="entry.571196062 " placeholder="Enter your KTJ ID">
+                            <input type="text" class="form-control1  inputfields" id="KTJ3" name="entry.1701716227 " placeholder="Enter your KTJ ID">
                         </div>
                         </div>
-                    </div>
-                  </div>
-                </div>
+                  
+              
+
+
+
+              <br><br>
+
+
+              <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -1787,42 +1747,42 @@ document.addEventListener("DOMContentLoaded", function() {
                       <div class="row">
 
                         <div class="col-md-6">
-                            <label for="firstname" class="form-label"  id="reglabel">Name</label>
-                            <input type="text" class="form-control1" id="firstname4" name="entry.1660144525" placeholder="Enter Your Name">
-                        </div>
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname4" name="entry.236060277" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email4" name="entry.2035381134" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone4" name="entry.825306097" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college4" name="entry.674242700" placeholder="College Name">
+                      </div>
                       
-          
-                        <div class="col-md-6">
-                            <label for="email" class="form-label"  id="reglabel">Email id:</label>
-                            <input type="text" class="form-control1" id="email4" name="entry.225061196" placeholder="abc@xyz.com">
-                        </div>
-          
-                        </div>
-          
-                        <div class="row">
-          
-                          <br>
-          
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
-                            <input type="text" class="form-control1" id="phone4" name="entry.735057038" placeholder="+91">
-                        </div>
-          
-                        <div class="col-md-6">
-                            <label for="college" class="form-label"  id="reglabel">College</label>
-                            <input type="text" class="form-control1" id="college4" name="entry.1979480920" placeholder="College Name">
-                        </div>
-                        
-                        </div>
-                        <div class="row">
+                      </div>
+                      <div class="row">
 
-                          <br>
-          
-                        <div class="col-md-6" >
-                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                            <input type="text" class="form-control1  inputfields" id="KTJ4" name="entry.971276001 " placeholder="Enter your KTJ ID">
-                        </div>
-                        </div>
+                        <br>
+        
+                      <div class="col-md-6" >
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ4" name="entry.577978907 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1837,42 +1797,93 @@ document.addEventListener("DOMContentLoaded", function() {
                       <div class="row">
 
                         <div class="col-md-6">
-                            <label for="firstname" class="form-label"  id="reglabel">Name</label>
-                            <input type="text" class="form-control1" id="firstname5" name="entry.950402432" placeholder="Enter Your Name">
-                        </div>
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname5" name="entry.187475855" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email5" name="entry.553517051" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone5" name="entry.1720313235" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college5" name="entry.1092825507" placeholder="College Name">
+                      </div>
                       
-          
-                        <div class="col-md-6">
-                            <label for="email" class="form-label"  id="reglabel">Email id:</label>
-                            <input type="text" class="form-control1" id="email5" name="entry.1016277411" placeholder="abc@xyz.com">
-                        </div>
-          
-                        </div>
-          
-                        <div class="row">
-          
-                          <br>
-          
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
-                            <input type="text" class="form-control1" id="phone5" name="entry.1283623901" placeholder="+91">
-                        </div>
-          
-                        <div class="col-md-6">
-                            <label for="college" class="form-label"  id="reglabel">College</label>
-                            <input type="text" class="form-control1" id="college5" name="entry.483976725" placeholder="College Name">
-                        </div>
-                        
-                        </div>
-                        <div class="row">
+                      </div>
+                      <div class="row">
 
-                          <br>
-          
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ5" name="entry.2011110740 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span id="formheading">Member-6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="row">
+
                         <div class="col-md-6">
-                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
-                            <input type="text" class="form-control1  inputfields" id="KTJ5" name="entry.1931006355 " placeholder="Enter your KTJ ID">
-                        </div>
-                        </div>
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname6" name="entry.1567032557" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email6" name="entry.1082342397" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone6" name="entry.1051092772" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college6" name="entry.469341535" placeholder="College Name">
+                      </div>
+                      
+                      </div>
+                      <div class="row">
+
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ6" name="entry.1256045612 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1892,7 +1903,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                   
                   
-                    <select id="ques1" name="entry.194555279" class="form-select" required>
+                    <select id="ques1" name="entry.175447457" class="form-select" required>
                     <option value="College">College</option>
                     <option value="LinkedIn">LinkedIn</option>
                     <option value="Friends">Friends</option>
@@ -1975,7 +1986,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             
           </article>
-        </section></comment>
+        </section>
         <!-- Newsletter Subscribtion --> 
         
         <!-- Contact -->
@@ -2160,10 +2171,11 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
        -->
       <!-- </div> -->
-      
+
       <div class="m3" style="width: 80%;">
-        
+
         <h2 style="color: #1eb8d8; font-size: 40px;"><strong>Our Advisors</strong></h2>
+        
         <div class="container_team">
           <div class="card">
             <div class="content">
@@ -2211,7 +2223,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <img src="images/Advisor photo/adyan.jpg" alt="">
         </div>
         <div class="detail">
-            <h2 style=" font-size: 25px">Adyan Rizvi</h2>
+            <h2 style=" font-size: 25px">Adyan Rizwi</h2>
             <h4 style="font-size: 15px ;">Advisor</h4>
             <div class="social">
                 <a href="mailto:"><i class="fa fa-envelope"></i></a>

@@ -1538,3 +1538,43 @@ h2#bclub{
 #registertext a:hover{
 	color:#087b92 !important;
 }
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+
+:root {
+	--sp: 12s;
+	--white: #ffffff;
+}
+
+.aboutcontent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 90vmin;
+}
+
+.aboutcontent div {
+	position: absolute;
+	display: flex;
+	animation: show-hide var(--sp) ease 0s infinite;
+	mix-blend-mode: plus-lighter;
+}
+
+@keyframes show-hide {
+	0%,
+	100% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	20%,
+	80% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@media (max-width: 1200px) {
+    .aboutpageicc {
+        display: none;
+		visibility: hidden;
+    }
+}

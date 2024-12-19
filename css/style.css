@@ -1578,3 +1578,6 @@ h2#bclub{
 		visibility: hidden;
     }
 }
+.form-label {
+	color: white !important;
+}

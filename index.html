@@ -1351,9 +1351,22 @@ function hiden()
             <i class="fa fa-info-circle" aria-hidden="true"></i>
             <span class="slidetext">About</span></a></li>
         <li id="men2">
-          <a data-toggle="tab" id="aMenu2" href="#menu2" title="Register" onclick="hiden()" onmouseover="lowerz()" onmouseout="higherz()">
-            <i class="fa fa-plus-square" aria-hidden="true"></i>
-            <span class="slidetext">Register</span></a></li>
+  <a 
+    id="aMenu2" 
+    href="unstop.html" 
+    title="Register" 
+    
+    
+    onmouseover="lowerz()" 
+    onmouseout="higherz()"
+  >
+    <i class="fa fa-plus-square" aria-hidden="true"></i>
+    <span class="slidetext">Register 
+      
+    </span>
+  </a>
+</li>
+
         <!-- <li id="men4">
           <a data-toggle="tab" id="aMenu4" href="#menu4" title="Register" onclick="hiden()" onmouseover="lowerz()" onmouseout="higherz()"><i class="fa fa-file-text-o"
                 aria-hidden="true"></i><span class="slidetext">Submissions</span></a></li> -->
@@ -1372,26 +1385,61 @@ function hiden()
   
   <!-- header -->
   
-  <header role="main-header"  id="header">
+  <header role="main-header" id="header">
     <div id="topnav"> 
-      
-      <!-- logo -->
-      
-      <h1 id="bclub" class="headalign"> <a id="blogo" href="index.html"  title="Floxi"><img id="whitelogo" src="images/whitelogo.png" alt="BClub"/></a>&nbsp;<span id="headertext"><span id="businesstext"><span id="Binlogo">B</span>usiness </span><span id="clubtext">Club</span></span>
-        <!-- REGISTER BUTTON -->
-      <span id="reghover" class="registerbutton">
-        <a id="areg" data-toggle="tab" href="#menu2" title="Register Now" onclick="hiden(); change()"><strong>Register</strong></a>
-      </span>
-      <!-- REGISTER BUTTON -->
+      <!-- Logo -->
+      <h1 id="bclub" class="headalign">
+        <a id="blogo" href="index.html" title="Floxi">
+          <img id="whitelogo" style="height: 55px; width: 60px;" src="images/whitelogo.png" alt="BClub"/>
+        </a>&nbsp;
+        <span id="headertext">
+          <span id="businesstext"  style="font-size: 50px;">
+            <span id="Binlogo" style="font-size: 50px;">B</span>usiness
+          </span>
+          <span id="clubtext" style="font-size: 50px;">Club</span>
+        </span>
+        <!-- Register Button --> 
+      <span id="reghover" class="registerbutton" style="width: 10vw; margin-right: 3vw; display: flex; flex-direction: column; justify-content: center !important; align-items: center !important;">
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; ">
+            <a 
+              id="areg" 
+              href="https://unstop.com/competitions/indian-case-challenge-2025-icc-kshitij-2025-iit-kharagpur-1301204" 
+              title="Register Now" 
+              target="_blank"
+              style="display: inline-block; width: 100%; height: auto; background-color: #1c4980;"
+            >
+              <img 
+                src="images/unstop.jpg" 
+                alt="Register Now" 
+                style="width: 100%; max-height: 50px; object-fit: contain; transition: transform 0.3s ease;"
+                class="hover-grow"
+              >
+            </a>
+            
+          </div>
+          <div style="color: #FFF !important; font-size: 23px; font-weight: 800 !important; margin-top: 5px !important; margin-left: 16px;">Register Now!<div>
+        </span>
+        
+        <style>
+          /* Hover effect for the image */
+          .hover-grow:hover {
+            transform: scale(1.1); /* Scales the image to 110% of its size */
+          }
+          @media (max-width: 768px) {
+    #reghover {
+      width: 200px !important;
+    }
+  }
+  
+        </style>
+        
+        
+        
+        
       </h1>
-      <!-- logo --> 
-
-
-      
-      
-
     </div>
   </header>
+  
   
   <!-- header --> 
   
@@ -1520,50 +1568,17 @@ function hiden()
 
         </section>
         
-        <!-- about --> 
         
-        <!-- Newsletter Subscribtion -->
           <section id="menu2" class="tab-pane fade other-page">
           <header id="regpagehead" role="page-title">
              <h2 id="bclub" role="headregister" >Registrations are open</h2>
           </header>
           <article class="home-content regtext"><p id="registertext" >Required field are marked with an asterisk (*)<br>  
-            <!-- to reviewing your submissions.  We appreciate all the hard work and<br> 
-            effort that has gone into your submissions to help Round 1 of <br>
-            ICC 2023 be a success.<br> -->
-            <!-- <br> Stay tuned to our social media handles on <br><a id="reganchortags" href="https://www.linkedin.com/company/bclubiitkgp/">LinkedIn</a>, <a id="reganchortags" href="https://www.instagram.com/bclub.iitkgp/">Instagram</a> and <a id="reganchortags" href="https://www.facebook.com/bclubkgp">Facebook</a> for further updates.<br> -->
-          </p>
-          <!-- <p id="wrappernew" style="border: none;"></p> -->
-        </article> 
-         <!-- <div id="submit"style="text-align: center;padding-top: 50px; padding-bottom: 50px;"><h3><strong>Registration Successful !!</strong></h3></div> -->
           
-          <subscribe>
-
-          <article>
-            <!-- <p>Give us your email so that you hear us first when we launch! It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-             -->
-            <div class="subscribe-pan">
-              <div class="ntify_form">
-                <!-- <form method="post" action="php/subscribe.php" name="subscribeform" id="subscribeform"> -->
-                  <!-- <input name="email" type="email" id="subemail" placeholder="Enter Your Email..."> -->
-                  <!-- <label> -->
-                    <!-- <input name="" type="submit" class="button-icon"> -->
-                    <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> </label> -->
-                </form>
-                
-                <!-- < subscribe message -->
-                
-                <div id="mesaj"></div>
-                
-                <!-- subscribe message > 
-                
-              </div>
-            </div>
-            
-            <subscribe --> 
-
-            </div>
-          </div>
+        </article> 
+         
+          
+          
 
 
 
